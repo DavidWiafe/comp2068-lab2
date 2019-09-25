@@ -2,9 +2,7 @@
 var express = require('express');
 var router = express.Router();
 
-
-
-/* GET home page. */
+/* GET Lab2 page. */ 
 router.get('/', function (req, res) {
 
     var value1;
@@ -23,9 +21,9 @@ router.get('/', function (req, res) {
         if (req.query.method == 'add') {
             if (req.query.x && req.query.y) {
 
-                value1 = parseFloat(req.query.x);
+                value1 = parseInt(req.query.x);
 
-                value2 = parseFloat(req.query.y);
+                value2 = parseInt(req.query.y);
 
                 answer = value1 + value2;
 
@@ -36,9 +34,9 @@ router.get('/', function (req, res) {
 
             if (req.query.x && req.query.y) {
 
-                value1 = parseFloat(req.query.x);
+                value1 = parseInt(req.query.x);
 
-                value2 = parseFloat(req.query.y);
+                value2 = parseInt(req.query.y);
 
                 answer = value1 - value2;
 
@@ -49,9 +47,9 @@ router.get('/', function (req, res) {
 
             if (req.query.x && req.query.y) {
 
-                value1 = parseFloat(req.query.x);
+                value1 = parseInt(req.query.x);
 
-                value2 = parseFloat(req.query.y);
+                value2 = parseInt(req.query.y);
 
                 answer = value1 * value2;
 
@@ -63,9 +61,9 @@ router.get('/', function (req, res) {
 
             if (req.query.x && req.query.y) {
 
-                value1 = parseFloat(req.query.x);
+                value1 = parseInt(req.query.x);
 
-                value2 = parseFloat(req.query.y);
+                value2 = parseInt(req.query.y);
 
                 answer = value1 / value2;
 
